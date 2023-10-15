@@ -42,6 +42,17 @@ def create_token():
     access_token = create_access_token(identity=user.serialize())
     return jsonify(access_token=access_token)
 
+@api.route('/hello', methods=['GET'])
+@jwt_required()
+def get_hello():
+
+    email = get_jwt_identity()
+    json = {
+        "message" : str(email["email"])
+    }
+    return jsonify(json)
+
+
 
 #pipenv run migrate )
 #                   ) <- first bash
