@@ -26,7 +26,7 @@ export const Navbar = () => {
 					<Link to="/private">
 						<button className="btn mx-2 btn-dark">Private Page</button>
 					</Link> 
-					<Link to="/login">
+					<Link to="/">
 						<button onClick={() => actions.logout()} className="btn btn-primary">Log out</button>
 					</Link>
 					</div>
