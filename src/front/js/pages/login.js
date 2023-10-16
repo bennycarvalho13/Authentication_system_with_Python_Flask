@@ -27,7 +27,7 @@ export const Login = () => {
                 <p>{"You are logged in this token: " + token}</p>
             </div>:
             <div>
-                <h1>login</h1>
+                <h1>Log In</h1>
                 <input type="text" placeholder="email" onChange={(e) => {setEmail(e.target.value)}}/>
                 <input type="password" placeholder="password"  onChange={(p) => {setPassword(p.target.value)}}/>
                 <button className="btn btn-primary" onClick={()=> {HandleClick()}}>Login</button>

@@ -20,18 +20,12 @@ export const SignUp = () => {
 
 	return (
 		<div className="text-center mt-5">
-            {(store.token && store.token !== "" && store.token !== undefined) ? 
             <div>
-                <h1>logged in</h1>
-                <p>{"You are logged in this token: " + token}</p>
-            </div>:
-            <div>
-                <h1>login</h1>
+                <h1>Sign Up</h1>
                 <input type="text" placeholder="email" onChange={(e) => {setEmail(e.target.value)}}/>
                 <input type="password" placeholder="password"  onChange={(p) => {setPassword(p.target.value)}}/>
-                <button className="btn btn-primary" onClick={()=> {HandleClick()}}>Sign UP</button>
+                <button className="btn btn-success" onClick={()=> {HandleClick()}}>Sign UP</button>
             </div> 
-            }
 		</div>
 	);
 };
